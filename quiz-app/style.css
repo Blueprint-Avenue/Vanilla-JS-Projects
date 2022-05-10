@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+display: flex;
+align-items: center;
+justify-content: center;
+    font-family: 'Macondo',
+        cursive;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.quiz__Container{
+ background-color: white;
+ border-radius: 10px;
+ box-shadow: 0 0 10px 5px rgba(100,100,100,0.3);
+ width: 600px;
+ max-width: 100%;
+ overflow: hidden;
+}
+
+.quiz__Header {
+   padding: 4rem;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    color: #a40606;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+ul li input {
+    cursor: pointer;
+}
+
+button {
+    background-color: #a40606;
+    border: none;
+    font-size: 1.3rem;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 1.3rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d98324;
+    transition: 0.3s ease-in-out;
+}
+
+/* button:focus {
+    background-color: #d98324;
+    outline: none;
+} */
