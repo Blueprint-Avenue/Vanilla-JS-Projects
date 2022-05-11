@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Macondo',
+        cursive;
+    margin: 0;
+    background-color: #22254b;
+}
+
+header{
+    background-color: #373b69;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.search {
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+    color: #7378c5;
+}
+
+.search:focus {
+    background-color: #22254b;
+    outline: none;
+}
+
+.movie {
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.6);
+    width: 300px;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie__Info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+    color: #eee;
+    letter-spacing: 0.5px;
+}
+
+.movie__Info h3{
+    margin: 0;
+}
+
+.movie__Info span {
+    background-color: #22254b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.movie__Info span.green{
+    color: rgb(39,189,39);
+}
+
+.movie__Info span.orange {
+    color: orange
+}
+
+.movie__Info span.red {
+    color: crimson;
+}
+
+.overview{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    overflow: auto;
+    background-color: #22254b;
+    color: #fff;
+    padding: 2rem;
+    transform: translateY(101%);
+    transition: 0.3s ease-in-out;
+}
+
+.overview h4{
+    margin-top: 0;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
